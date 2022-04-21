@@ -1,0 +1,113 @@
+.wow {
+  width: 100px;
+}
+
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #999494;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+ h1 {
+    font-family: "Papyrus";
+    letter-spacing: 5px;
+   position: auto;
+            }
+body {
+      font-family: "Times New Roman", Georgia, Serif;
+            }
+:root{
+    --tenne-tawny: #acafae;
+    --tenne-tawny-dark: #6361f5;
+}
+.button{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.recipe-button{
+    text-decoration: none;
+    color: #fcf8f8;
+    background: var(--tenne-tawny);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: auto;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.recipe-button:hover{
+    background: var(--tenne-tawny-dark);
+}
+
+/* for the search bar in the homepage*/
+* {
+  box-sizing: border-box;
+}
+
+.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-radius:6px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #43a7f9;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius:6px;
+  cursor: pointer;
+}
+
+.example button:hover {
+  background: #0b7dda;
+}
+
+.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
