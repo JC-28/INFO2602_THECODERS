@@ -1,50 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>About Us!</title>
-  <style>
-body, html {
-    height: 100%;
-}
-    
-.back-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/uncooked-heart-shaped-pasta-julia-davila-lampe.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  /* Set a specific height */
-  height: 100%;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-/* Place text in the middle of the image */
-.text {
-  text-align: center;
-  position:relative;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-</style>
-</head>
+{% extends "layout.html" %}
+{% block title %}About us{% endblock %}
 
-<body>
-<ul class="topnav">
-  <li><a class="active" href="about.html">About Us!</a></li>
-  <li class="right"><a href="index.html">FoodieZone homepage</a></li>
-  <li class="right"><a href="login.html">Login in!</a></li>
-  <li class="right"><a href="signup.html">Join Now!</a></li>
-</ul>
+
+
+{{ super() }}
+{% block content %}
+
   
 <div class="back-image">
        <p style="font-size:25px;" class="text">Often people will have ingridents on hand and have no idea what to cook. This website aims in bringing creativity to the kitchen! </p>
   </div>
-</body>
-</html>
+{% endblock %}

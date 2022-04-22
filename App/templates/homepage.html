@@ -1,34 +1,22 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style.css">
-       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>FoodieZone homepage</title>
-        <style>
-            .image{
-                max-width:100%;
-                height:auto;
-                vertical-align:left;
-                color:inherit;
-            }
-          h2{
-            text-align: center;
-            font-family: cursive;
-          }
-        </style>
-    </head>
-<body>
-    <!-- Navbar (sit on top) -->
-  <ul class="topnav">
-  <li><a class="active" href="index.html">Welcome to FoodieZone!</a></li>
-  <li class="right"><a href="login.html">Log in!</a></li>
-  <li class="right"><a href="signup.html">Join Now!</a></li>
-  <li class="right"><a href="about.html">About Us!</a></li>
-</ul> 
-  
+{% extends "layout.html" %}
+{% block title %}FoodieZone homepage{% endblock %}
+{% block style %}
+  .image{
+    max-width:100%;
+    height:auto;
+    vertical-align:left;
+    color:inherit;
+    }
+  h2{
+    text-align: center;
+    font-family: cursive;
+    }
+{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+
     <!-- Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:600px;min-width:200px" id="home">
         <img class="image" src="https://static01.nyt.com/images/2017/09/25/dining/bonebrothchickenstock/bonebrothchickenstock-articleLarge.jpg" alt="Cooking prep picture" width="600px" height="100px">
@@ -73,5 +61,4 @@
     </div>
   </div>
 </div>
-</body>
-</html>
+{% endblock %}
